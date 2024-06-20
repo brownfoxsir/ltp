@@ -3,7 +3,7 @@
 # Author: Yunlong Feng <ylfeng@ir.hit.edu.cn>
 
 import torch
-from torch._six import string_classes
+string_classes = str
 from torch.utils.data._utils.collate import np_str_obj_array_pattern, default_collate_err_msg_format
 
 _TORCH_MAJOR, _TORCH_MINOR = map(int, torch.__version__.split('.')[0:2])
